@@ -1,0 +1,23 @@
+.aside {
+  &__link:hover,
+  &__link.active {
+    svg {
+      @apply fill-blue-500
+    }
+  }
+  &__notify {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &:before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      display: block;
+      @apply bg-blue-400;
+      border-radius: 50%;
+      align-self: flex-end;
+      margin-left: 10px;
+    }
+  }
+}
